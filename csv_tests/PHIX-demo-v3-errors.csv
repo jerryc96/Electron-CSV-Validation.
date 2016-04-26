@@ -1,0 +1,51 @@
+HEALTH CARD NUMBER,FIRST NAME,MIDDLE NAME,LAST NAME,DATE OF BIRTH,GENDER,ADDRESS TYPE,UNIT NUMBER,STREET NUMBER,STREET NAME,STREET TYPE,STREET DIRECTION,PO BOX,STN,RPO,RURAL ROUTE,PROVINCE/TERRITORY,CITY,POSTAL CODE,SCHOOL/DAY CARE,SUBMITTER FIRST NAME,SUBMITTER LAST NAME,SUBMITTER RELATIONSHIP,SUBMITTER PHONE NUMBER 1 TYPE,SUBMITTER PHONE NUMBER 1,SUBMITTER PHONE NUMBER 2 TYPE,SUBMITTER PHONE NUMBER 2,SUBMITTER EMAIL,IMMUNIZATION DATE,IMMUNIZING AGENT,OTHER DETAILS
+Missing HCN (no error expected)
+,Bart,,Simpson,2008-04-21,M,Home/Residence,,742,Evergreen,Terrace,,,,,,Ontario,Springfield,A1B 2C3,A GYM TALE - OT-0004783,Homer,Simpson,Parent,Home,123-456-7890,,,,2015-01-01,Men-C-C,ABC123
+Missing FN
+0000000000,,,Simpson,2008-04-21,M,Home/Residence,,742,Evergreen,Terrace,,,,,,Ontario,Springfield,A1B 2C3,A GYM TALE - OT-0004783,Homer,Simpson,Parent,Home,123-456-7890,,,,2015-01-01,Men-C-C,ABC123
+Missing LN
+0000000000,Bart,,,2008-04-21,M,Home/Residence,,742,Evergreen,Terrace,,,,,,Ontario,Springfield,A1B 2C3,A GYM TALE - OT-0004783,Homer,Simpson,Parent,Home,123-456-7890,,,,2015-01-01,Men-C-C,ABC123
+Missing DOB
+0000000000,Bart,,Simpson,,M,Home/Residence,,742,Evergreen,Terrace,,,,,,Ontario,Springfield,A1B 2C3,A GYM TALE - OT-0004783,Homer,Simpson,Parent,Home,123-456-7890,,,,2015-01-01,Men-C-C,ABC123
+DOB invalid
+0000000000,Bart,,Simpson,200y-04-21,M,Home/Residence,,742,Evergreen,Terrace,,,,,,Ontario,Springfield,A1B 2C3,A GYM TALE - OT-0004783,Homer,Simpson,Parent,Home,123-456-7890,,,,2015-01-01,Men-C-C,ABC123
+DOB future
+0000000000,Bart,,Simpson,3000-04-21,M,Home/Residence,,742,Evergreen,Terrace,,,,,,Ontario,Springfield,A1B 2C3,A GYM TALE - OT-0004783,Homer,Simpson,Parent,Home,123-456-7890,,,,2015-01-01,Men-C-C,ABC123
+Gender invalid
+0000000000,Bart,,Simpson,2008-04-21,AAA,Home/Residence,,742,Evergreen,Terrace,,,,,,Ontario,Springfield,A1B 2C3,A GYM TALE - OT-0004783,Homer,Simpson,Parent,Home,123-456-7890,,,,2015-01-01,Men-C-C,ABC123
+Imms Date missing
+0000000000,Bart,,Simpson,2008-04-21,M,Home/Residence,,742,Evergreen,Terrace,,,,,,Ontario,Springfield,A1B 2C3,A GYM TALE - OT-0004783,Homer,Simpson,Parent,Home,123-456-7890,,,,,Men-C-C,ABC123
+Imms Agent Missing
+0000000000,Bart,,Simpson,2008-04-21,M,Home/Residence,,742,Evergreen,Terrace,,,,,,Ontario,Springfield,A1B 2C3,A GYM TALE - OT-0004783,Homer,Simpson,Parent,Home,123-456-7890,,,,2015-01-01,,ABC123
+Imms Date future
+0000000000,Bart,,Simpson,2008-04-21,M,Home/Residence,,742,Evergreen,Terrace,,,,,,Ontario,Springfield,A1B 2C3,A GYM TALE - OT-0004783,Homer,Simpson,Parent,Home,123-456-7890,,,,3000-01-01,Men-C-C,ABC123
+Imms Date future and DOB future
+0000000000,Bart,,Simpson,3000-04-21,M,Home/Residence,,742,Evergreen,Terrace,,,,,,Ontario,Springfield,A1B 2C3,A GYM TALE - OT-0004783,Homer,Simpson,Parent,Home,123-456-7890,,,,3000-01-01,Men-C-C,ABC123
+Imms Date not a valid day, DOB Date not a valid day
+0000000000,Bart,,Simpson,2008-04-55,M,Home/Residence,,742,Evergreen,Terrace,,,,,,Ontario,Springfield,A1B 2C3,A GYM TALE - OT-0004783,Homer,Simpson,Parent,Home,123-456-7890,,,,2015-01-55,Men-C-C,ABC123
+Imms date less than DOB
+0000000000,Bart,,Simpson,2008-04-21,M,Home/Residence,,742,Evergreen,Terrace,,,,,,Ontario,Springfield,A1B 2C3,A GYM TALE - OT-0004783,Homer,Simpson,Parent,Home,123-456-7890,,,,2000-01-01,Men-C-C,ABC123
+Imms Date invalid
+0000000000,Bart,,Simpson,2008-04-21,M,Home/Residence,,742,Evergreen,Terrace,,,,,,Ontario,Springfield,A1B 2C3,A GYM TALE - OT-0004783,Marge,Simpson,Parent,Home,123-456-7890,,,,201Y-01-01,Pneu-C-13,DEF456
+Spaces for required Data
+0000000000,  ,,  ,2008-04-21, ,Home/Residence,,742,Evergreen,Terrace,,,,,,Ontario,Springfield,A1B 2C3,A GYM TALE - OT-0004783,Marge,Simpson,Parent,Home,123-456-7890,,,,2015-01-01,  ,DEF456
+Removed Last comma
+0000000000,Bart,,Simpson,2008-04-21,M,Home/Residence,,742,Evergreen,Terrace,,,,,,Ontario,Springfield,A1B 2C3,A GYM TALE - OT-0004783,Marge,Simpson,Parent,Home,123-456-7890,,,,2015-01-01,Pneu-C-13
+Added more data
+0000000000,Bart,,Simpson,2008-04-21,M,Home/Residence,,742,Evergreen,Terrace,,,,,,Ontario,Springfield,A1B 2C3,A GYM TALE - OT-0004783,Marge,Simpson,Parent,Home,123-456-7890,,,,201Y-01-01,Pneu-C-13,DEF456,Test extra data
+Valid Bart record
+0000000000,Bart,,Simpson,2008-04-21,M,Home/Residence,,742,Evergreen,Terrace,,,,,,Ontario,Springfield,A1B 2C3,A GYM TALE - OT-0004783,Marge,Simpson,Parent,Home,123-456-7890,,,,201Y-01-01,Pneu-C-13,DEF456
+Empty space
+
+ABCD,Newclient,NoHCN,Lastname,2011-01-01,F,Home/Residence,,5700,,Street,,,,,,,,,ABC MONTESSORI LEARNING CENTRE - PL-933,Fozzie,Bear,Legal Guardian,,,,,,2015-07-01,MMR-Var,"Additional immunization comments test list: 1, 2, 3, 4"
+0,Minnie,,Mouse,2010-01-01,F,Home/Residence,,5700,Yonge,ST,,,,,,Ontario,Toronto,M2M 4K5,NoHCN NoMN School,Daffy,Duck,Parent,Home,123-456-7890,,,,2015-01-01,Pneu-C-13,NoHCN
+000000000,Minnie,NoHCN,Mouse,2010-01-01,F,Home/Residence,,5700,Yonge,ST,,,,,,Ontario,Toronto,M2M 4K5,NoHCN School,Daffy,Duck,Parent,Home,123-456-7890,,,,2015-01-01,Pneu-C-13,NoHCN
+Some Valid Clients
+0000000000,Minnie,NoHCN,Mouse,2010-01-01,F,Home/Residence,,5700,Yonge,ST,,,,,,Ontario,Toronto,M2M 4K5,NoHCN School,Daffy,Duck,Parent,Home,123-456-7890,,,,2015-01-01,Pneu-C-13,NoHCN
+0000000000,Maggie,,Simpson,2012-03-25,F,Home/Residence,,742,Evergreen,Terrace,,,,,,Ontario,Springfield,A1B 2C3,A GYM TALE - OT-0004783,Marge,Simpson,Parent,Home,123-456-7890,,,,2015-01-01,Pneu-C-13,DEF456
+3393471168,Minnie,,Mouse,2010-01-01,F,Home/Residence,,5700,Yonge,ST,,,,,,Ontario,Toronto,M2M 4K5,ABC School,Daffy,Duck,Parent,Home,123-456-7890,,,,2015-01-01,Pneu-C-13,DEF456
+3393471168,Minnie,,Mouse,2010-01-01,F,Home/Residence,,5700,Yonge,ST,,,,,,Ontario,Toronto,M2M 4K5,ABC School,Daffy,Duck,Parent,Home,123-456-7890,,,,2015-01-01,Men-C-C,
+3393471168,Minnie,,Mouse,2010-01-01,F,Home/Residence,,5700,Yonge,ST,,,,,,Ontario,Toronto,M2M 4K5,,Daffy,Duck,Parent,Home,123-456-7890,,,,2015-01-01,Men-C-C,
+0000000000,Kermit,the,Frog,2010-01-01,M,Home/Residence,1a,5700,Yonge,Street,North,PO123,STNabc,RPO456,Rrdef,Ontario,North York,M2M 4K5,123 TLC DAYCARE - PL-73324,Gonzo,,Parent,Home,123-456-7890,Work,555-555-5555,abc@email.com,2015-01-01,Men-C-C,LOTABC123
+0000000000,Kermit,the,Frog,2010-01-01,M,Home/Residence,1a,5700,Yonge,Street,North,PO123,STNabc,RPO456,Rrdef,Ontario,North York,M2M 4K5,123 TLC DAYCARE - PL-73324,Gonzo,,Parent,Home,123-456-7890,Work,555-555-5555,abc@email.com,2015-01-01,Pneu-C-13,Dr. Animal
+9999999999,Miss,,Piggy,2011-01-01,F,Home/Residence,,5700,,Street,,,,,,,,,ABC MONTESSORI LEARNING CENTRE - PL-933,Fozzie,Bear,Legal Guardian,,,,,,2015-07-01,MMR-Var,

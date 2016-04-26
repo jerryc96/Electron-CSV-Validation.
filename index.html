@@ -1,0 +1,57 @@
+<html ng-app="csvApp">
+<head>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="layout.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/babyparse/babyparse.js"></script>
+	<script src="angular.min.js"></script>
+	<script src="moment.js"></script>
+  <script src="node_modules/bootbox/bootbox.min.js"></script>
+	<script src="app.js"></script>
+	<script src="valid.js"></script>
+</head>
+<body ng-controller="ValidCtrl">
+<div class="container">
+  <div class="form-signin">
+    <label for="exampleInputFile" class="form-signin-heading">PHIX OFFLINE CSV VALIDATION</label>
+    <input type="file" id="input" accept=".csv">
+    <p class="help-block">Insert a CSV file above</p>
+    <button class="btn btn-primary" ng-click="parsefile()">Validate file</button>
+  </div>
+  <div class="form-signin">
+    <input type="file" id="in" accept=".csv"><p class="help-block">parse with fast-csv</p>
+    <button class="btn btn-primary" onclick="fastParse()">parse</button>
+  </div>
+  <output id="list" style="white-space: pre-line"></output>
+  <script>
+  function handleFileSelect(evt) {
+    var files = evt.target.files; // FileList object
+
+    // Loop through the FileList and render image files as thumbnails.
+    for (var i = 0, f; f = files[i]; i++) {
+
+      // Only process image files.
+      if (!f.type.match('text/csv')) {
+        continue;
+      }
+
+      var reader = new FileReader();
+
+      // Closure to capture the file information.
+      reader.onload = (function(theFile) {
+        return function(e) {
+          document.getElementById('list').innerHTML = e.target.result;
+        };
+      })(f);
+
+      // Read in the image file as a data URL.
+      reader.readAsText(f);
+    }
+  }
+
+  document.getElementById('input').addEventListener('change', handleFileSelect, false);
+  </script>
+</div>
+</body>
+</html>

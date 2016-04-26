@@ -1,0 +1,15 @@
+.form-signin {
+  max-width: 450px;
+  padding: 40px;
+  margin: 0 auto;
+  background-color: #EBE9F1;
+}
+.form-signin-heading {
+  padding: 10px;
+  font-size: 18px;
+  font-family: Arial;
+  background-color: #ffffff;
+}
+.form-signin .form-signin-heading {
+  margin-bottom: 10px;
+}
